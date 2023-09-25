@@ -1,0 +1,1860 @@
+// template
+$b: #000
+$w: #fff
+$tg: #85C440
+$tb: #004D79
+$tro: #E65A27
+$to: #FDB813
+$g: #ACACAC
+
+div
+	outline: none
+
+input
+	&::-ms-clear,
+	&::-ms-reveal
+		display: none !important
+
+button, input
+	outline: none !important
+	&:focus
+		outline: none !important
+
+h2, .artblock > .artblock-details > .name > a, h3, .slideshow-text-0
+	font-family: 'Chewy', cursive
+	color: $tg
+	letter-spacing: 2px
+
+h2
+	font-size: 45px
+	margin-bottom: 1.5em	
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative !important
+	img
+		position: absolute
+		z-index: -1		
+		width: 75px
+		right: 0
+		left: 0
+		margin: auto
+		top: 0
+		bottom: 0
+
+	@media(max-width: 1023px)
+		font-size: 2em
+
+.btn-primary, .btn-default, .btn-danger
+	background: $tg
+	color: $w
+	border-radius: 25px !important
+	border-color: $tg
+	min-width: 9em
+	letter-spacing: 1px
+	transition: .6s ease
+	text-transform: uppercase
+	padding: 1em 2em
+	&:hover, &:active, &:focus, &:focus-within
+		border-color: $tg !important
+		background: $w !important
+		color: $tg !important
+
+.blue-butt
+	background: $tb
+	border-radius: 25px !important
+	color: $w
+	padding: 1.25em 5.5em
+	font-weight: bold
+
+.yellow-butt
+	background: $to
+	border-color: $to
+	color: $w
+	font-weight: bold
+
+.cart-dorpdown-items
+	.item-details
+		.input-group
+			width: 50%
+
+.mi-button, .product-button, .item-details
+	.btn-default, .btn-primary, #filter_group_tigger_close, button
+		min-width: 0 !important
+		padding: 6px 12px
+		box-shadow: none !important
+		border-radius: 0 !important
+		background: #7D7D7D !important
+		border: #7D7D7D !important
+
+#filter_group_tigger_close
+	min-width: 0 !important
+	padding: 6px 12px !important
+	border-radius: 0 !important
+
+#filter_group_tigger_open
+	border-radius: 0 !important
+	min-width: 0
+	padding: .45em !important
+
+.dropdown-menu, .cart-quantity
+	color: $b
+
+	.input-group-btn > button
+		background: $tg
+			
+	.cart-dorpdown-footer > a
+		color: $w
+
+a
+	&:hover
+		color: $tg !important
+
+.breadcrumb
+	background: none
+	border: none
+	li
+		a
+			color: $b
+			font-size: .8em
+			font-weight: bold
+		&:first-of-type
+			padding-left: 0
+
+		&:hover
+			a
+				color: $tg
+
+.alert
+	.alert-danger, .alert-success
+		margin-top: 3%
+
+#content
+	margin-bottom: 3em
+	line-height: 2em
+
+#mobileNav
+	i
+		color: $tg
+
+#sidr
+	.cd-accordion-menu
+		li
+			label
+				display: none
+			label ~ ul
+				display: none !important
+		a
+			color: $w !important
+			&:hover
+				color: $w !important
+				font-weight: bold
+
+	a
+		color: $w !important
+		&:hover
+			color: $w !important
+			font-weight: bold
+
+.account-forgotten
+	form
+		fieldset
+			padding-top: 3%
+
+.account-order
+	.modal-dialog
+		.modal-body
+			ul
+				margin: auto
+				width: auto
+				li
+					a
+						background: $tg
+						color: $w
+						border: 1px solid $tg
+						transition: .3s ease
+						.badge
+							color: $tg
+				&:hover
+					a
+						background: $w
+						color: $tg
+			#reorder_order
+				width: auto
+				margin: auto
+				background: $tg
+				color: $w
+				border: 1px solid $tg
+				transition: .3s ease
+				&:hover
+					background: $w
+					color: $tg
+
+header
+	border-bottom: 2px solid $tg
+	padding-top: 0 !important
+
+	&.fixed-header
+		background: rgba(255,255,255,1)
+		border-bottom: 0
+
+	&.nav_scroll
+		position: fixed
+		transition: .4s ease
+		@media (max-width: 1023px)
+			.header-logo
+				position: relative !important
+				width: 100%
+				img
+					width: 6em !important
+
+		.footer-social-icons
+			display: none
+
+		.outer
+			display: none
+
+		.top
+			position: relative
+
+			.header-logo
+				position: absolute
+				top: 0			
+
+			.header-top
+				width: auto !important
+				position: absolute
+				right: 0
+				height: 100%
+				top: 0
+
+				.pop-search
+					display: block !important
+
+				.search-button
+					display: none
+
+		@media (min-width: 1024px)
+			.inner3
+				display: block !important
+
+		@media (max-width: 1023px)
+			.header-logo
+				left: 0
+				right: 0			
+
+		@media (max-width: 767px)
+			.header-top
+				position: relative !important
+
+		.header-menu
+			width: 100%
+			#main-menu
+				display: flex
+				justify-content: center
+				height: 100%
+				a
+					height: 100%
+
+		.marquee
+			display: none
+
+	.header-top
+		height: 3.1em
+		display: flex
+		align-items: center
+		width: 100%
+
+	.top
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		.header-logo
+			text-align: center
+			padding: 1em
+			img
+				// width: inherit
+				max-width: inherit !important
+
+				@media (min-width: 1200px)
+					height: 130px !important
+
+				@media (max-width: 1023px)
+					width: 5em !important
+
+			@media (max-width: 767px)
+				padding: 2em
+				margin: auto
+
+		.search_container
+			button
+				background: $to
+				color: $w
+				&:hover
+					background: $to
+
+	.header-menu
+		align-items: center
+		height: 4em
+		#main-menu
+			li
+				a
+					text-transform: uppercase
+					font-weight: bold
+					color: $b !important
+					@media (min-width: 1200px)
+						padding: 30px !important
+
+					@media (max-width: 1199px)
+						a
+							padding: 30 15px !important
+
+				.sub-arrow
+					display: none
+
+				ul
+					display: none
+
+	.marquee
+		transition: .3s ease
+		height: 2em
+		background: #3A2514
+		color: $w
+		display: flex
+		align-items: center
+
+	@media (max-width: 767px)
+		.footer-social-icons
+			display: none
+
+		.header-logo
+			padding: 1em !important
+			img
+				width: 5em !important
+
+		.header-top
+			width: auto !important
+
+		.header-container
+			padding: 0
+
+.information-contact-success
+	#content
+		text-align: center
+		.buttons
+			margin-top: 4em !important
+
+.pagination-container
+	text-align: center
+	.pagination
+		li
+			a, span
+				border: none
+				color: $b
+				font-weight: bold
+				width: 3em
+				height: 3em
+				display: flex
+				align-items: center
+				justify-content: center				
+				border-radius: 50%
+			a
+				background: transparent
+			&.active
+				span
+					color: $w
+					background: $tg
+
+.container
+	@media (min-width: 1200px)					
+		width: 90%
+
+.floaters
+	position: absolute
+	transition: .2s ease
+	z-index: -2
+
+	&.leaf-1
+		right: 5%
+
+	&.leaf-2
+		top: 85%
+
+	&.wheat-1
+		top: 70%
+		right: 0
+		transform: scale(.9)
+		transform-origin: right
+
+	&.wheat-2
+		top: 55em
+		left: 0
+		transform: scale(.9)
+		transform-origin: left
+
+.news-ncategory
+	.col-sm-3
+		width: 20%
+
+		.artblock
+			border: none
+			display: flex
+			align-items: center
+			margin: 1em 0
+
+			.image
+				overflow: hidden
+				width: 5.5em
+				height: 5.5em
+
+				img
+					height: 100%
+					width: auto
+					max-width: inherit
+
+			.detail
+				padding: 0 1em
+				width: 50%
+				*
+					color: $b
+				a
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 1
+					overflow: hidden
+					height: 20px
+
+			&:hover
+				box-shadow: none
+
+				.detail
+					*
+						color: $tg
+
+		.news-ctgr
+			.list-group-item
+				padding-left: 0 !important
+				a
+					background: $tg
+					width: fit-content
+					border-radius: 20px
+					padding: .75em 1.5em
+					color: $w
+
+				&:hover
+					a
+						background: $tb
+						color: $w !important
+
+		@media (max-width: 1023px)
+			width: 100%
+			h3
+				text-align: center
+			.artblock
+				width: 90%
+				margin-left: auto
+				margin-right: auto
+
+	.col-sm-9
+		width: 80%
+		.artblock
+			margin-bottom: 3em
+
+	@media (max-width: 1023px)
+		#articles-filter-trigger-open
+
+
+.artblock
+	position: relative
+	transition: .2s ease
+	.date
+		position: absolute
+		background: $tro
+		color: $w
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 20px
+		padding: 2.5em 1em
+		border-bottom-right-radius: 20px
+
+	.image
+		overflow: hidden
+
+	@media (max-width: 767px)
+		.image
+			height: 10em
+			img
+				height: 100%
+				max-width: fit-content !important
+				width: auto
+
+		.date
+			padding: 1em !important
+			font-size: 15px
+
+	.artblock-details
+		padding: 2em
+		background: $w
+		.name
+			margin-bottom: 1em
+			a
+				font-size: 22px
+
+		.description
+			margin-bottom: 1em
+			color: $b
+			display: -webkit-box
+			-webkit-line-clamp: 3
+			-webkit-box-orient: vertical
+			overflow: hidden
+
+		.blog-button
+			a
+				color: $to
+				text-transform: uppercase
+				font-size: 13px
+				text-shadow: .5px 0
+
+	&:hover
+		box-shadow: 0 0 15px lightgrey
+
+.news-article
+	.article-content
+
+		.art-footer
+			justify-content: space-between
+			color: $to
+			font-weight: bold
+
+			.flex-vcenter
+				background: rgba(255,255,255,.75)
+				border-radius: 20px
+
+		h3
+			font-size: 28px
+
+		p
+			color: $b
+
+	@media (max-width: 1023px)
+		.art-footer
+
+			.flex-vcenter
+				padding: 0 10px
+
+	@media (max-width: 767px)
+		.art-footer
+			flex-direction: column
+
+			.flex-vcenter
+				padding: 0 10px
+				.pd-r15
+					padding-left: 15px
+
+.iid-7
+	.contain-mv
+		img
+			width: auto !important
+
+.iid-4, .iid-7, .common-home
+	#content
+		margin-bottom: 0
+
+	.global-h2
+		display: none
+
+	.custom2
+		.contain-about
+			margin: auto
+
+			.right
+				.contain-image
+					margin: auto
+
+		.design-0
+			top: 3%
+			right: 6%
+
+		.about-footer
+			.contain-mv
+				text-align: center
+				padding: 0 10px
+
+				h3
+					font-size: 30px
+
+				img
+					z-index: 0 !important
+					max-width: 15em
+					height: 15em
+					width: max-content
+					border-radius: 50%
+					margin: auto auto 2em
+
+				p
+					color: $b
+
+			.slick-active
+				opacity: .5
+				transition: .3s ease
+
+				&:focus
+					border: none
+
+		@media (min-width: 1300px)
+			.slick-current
+				+ div + div
+					opacity: 1 !important
+
+		@media (max-width: 1299px)
+			.slick-current
+				+ div
+					opacity: 1 !important
+
+		@media (min-width: 1200px)
+			.design-2
+				right: -2%
+
+			.design-3
+				right: -9%
+
+			.left
+				order: 2
+
+			.right
+				order: 1
+
+		@media (max-width: 1199px)
+			.contain-about
+				.right
+					margin-top: 2em
+
+		@media (max-width: 767px)
+			.slick-current
+				opacity: 1 !important
+
+	.custom, .custom3
+		.contain-about
+			margin: auto auto 5em
+
+			.right
+				.contain-image
+					margin-left: auto
+
+		.design-0
+			top: 0
+			right: 45%
+
+		.contain-mv
+			display: flex
+
+			img
+				width: 4.5em
+
+		@media (min-width: 1200px)
+			.design-2
+				right: -8%
+
+			.design-3
+				right: -15%
+
+	.custom, .custom2, .custom3
+		padding: 0
+		.contain-about
+			display: flex
+			align-items: center
+			width: 90%
+
+			.left
+				h2
+					margin-top: 68px
+					img
+						width: auto !important
+
+				.description
+					color: $b
+					width: 90%
+					margin: auto
+
+			.right
+				position: relative
+
+				.contain-image
+					overflow: hidden
+					width: 88%
+					display: flex
+					justify-content: center
+
+					.main-0
+						max-height: 56vh
+
+					.main-1
+						max-height: 19em
+						max-width: 19em
+						height: 19em
+						width: 19em
+						object-fit: cover
+						border-radius: 50%
+
+			.design-0
+				transform: scale(.9)			
+
+			.design-1
+				top: 25%
+				left: -12%
+				transform: scale(.9)			
+
+			.design-2
+				top: 10%
+				transform: scale(.9)			
+
+			.design-3
+				bottom: -25%
+				z-index: 1
+				transform: scale(.9)
+
+		.about-footer
+			padding: 5.5em 0
+
+			.inner
+				display: flex
+				justify-content: center
+				width: 90%
+				margin: auto
+
+				.contain-mv
+					margin: auto
+
+					> div
+						padding: 0 1em
+
+						h3
+							color: $to
+
+						p
+							color: $b
+
+		@media (min-width: 1200px)
+			.left, .right
+				width: 50%
+
+		@media (max-width: 1199px)
+			.contain-about
+				flex-direction: column
+
+				.right
+					width: 100%
+					margin-bottom: 6em
+
+					.contain-image
+						margin: auto !important
+
+						.main-1
+							top: 60%
+							left: -3%					
+
+						&:last-of-type
+							margin-bottom: 2em !important
+
+				.design-2
+					right: 0
+
+				.design-3
+					right: -5%
+
+				.design-0
+					z-index: 1 !important
+					right: 0 !important
+
+		@media (min-width: 1024px)
+			.contain-mv
+				width: 45%
+				align-items: flex-start
+
+		@media (max-width: 1023px)
+			.design-2
+				right: -2em !important
+
+			.about-footer > .inner, .contain-mv
+				flex-direction: column
+
+			.contain-mv
+				text-align: center
+				width: 90%
+				margin: auto
+				align-items: center
+				&:first-of-type
+					margin-bottom: 1em
+
+		@media (min-width: 768px)
+			.main-1
+				position: absolute
+				top: 50%
+				left: 2%
+				right: 0		
+
+		@media (max-width: 767px)
+
+			.design-1
+				left: -25% !important
+				top: 32% !important
+
+			.design-2
+				right: -8% !important
+				top: 0 !important
+
+			.design-3
+				bottom: -15% !important
+				right: -15% !important
+
+			.main-1
+				margin-top: 1em
+
+			h2
+				img
+					width: auto !important
+					max-width: 5em
+
+.newsletter-section
+	background: $b
+	padding: 5em 0
+
+	.box-content
+
+		.mi-toptext
+			color: $w
+			letter-spacing: 1px
+			margin: 1.5em 0
+
+		.newsletter-grid
+			background: white
+			overflow: hidden
+			border-radius: 10px
+			padding: 5px
+			.mi-block
+				margin: 0
+				height: 4.5em
+				input
+					height: 100%
+					border: none
+					box-shadow: none
+
+				a
+					border-radius: 10px !important
+					background: $to !important
+					font-weight: bold
+					width: 9em
+
+		@media (min-width: 768px)
+			max-width: 45%
+
+		@media (max-width: 767px)
+			max-width: 70%
+			.newsletter-grid
+				flex-direction: column
+				display: flex
+				height: auto
+
+				.mi-block
+					margin-bottom: 0
+
+					input
+						text-align: center
+
+					a
+						margin: auto
+						width: 100%
+						height: 3em
+
+					&.mi-button
+						margin-bottom: 7px
+
+#button-login, #button-coupon
+	background: $tg !important
+	&:hover
+		background: transparent !important
+
+.product-category
+	@media (min-width: 1024px)
+		.product-inputs
+			width: 90% !important
+
+	h2
+		img
+			width: 3.5em
+
+	.list-group-item, .item-header
+		background: transparent
+
+	.container
+		width: 95%
+		aside
+			#filter-groups
+				.item-header
+					font-size: 22px
+
+				.item
+					&.level-1
+						margin: .5em 0
+						width: 9.5em !important
+						background: $tg
+						border-radius: 20px
+						color: white
+						padding: 8px 20px
+						position: relative
+
+						&:hover, &.active
+							background: $tb
+
+						@media (max-width: 767px)
+							width: 100% !important
+
+					a
+						color: transparent
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+
+				#side_filter
+					input
+						height: 1em
+
+					label
+						height: 2em
+
+		@media (min-width: 1024px)
+			aside
+				width: 20%
+
+				#filter-groups
+					width: 90%
+
+		@media (max-width: 1023px)
+			aside
+				padding: 0
+
+				#side-price
+					.list-group-item
+						padding-right: 0
+
+.product-gutter
+	&:hover
+		.product-block
+			box-shadow: 0 0 15px #ccc
+
+	.product-block
+		position: relative
+
+		.product-inputs
+			margin: auto
+			input
+				border-color: #ddd
+			button
+				background: $w !important
+				border: 1px solid #ddd !important
+				span
+					color: $b
+
+		.cart-buttons
+			max-width: 100%
+			button
+				max-width: 100%
+
+		.product-name
+			a
+				font-size: 16px
+				color: $b
+				display: -webkit-box
+				-webkit-line-clamp: 1
+				-webkit-box-orient: vertical
+				overflow: hidden
+
+			h4
+				font-size: 14px
+				color: grey
+				min-height: 2em
+
+		.product-details
+			*
+				font-weight: bold
+				font-size: 18px
+
+			.price-new
+				color: $tg
+
+			.sale
+				color: $tro !important
+
+			.price-old
+				color: grey
+
+	@media (min-width: 1600px)
+		.product-inputs
+			width: 50%
+
+	@media (max-width: 1599px)
+		.product-inputs
+			width: 90%
+
+	@media (min-width: 768px)
+		.product-block
+			padding: 2.5em 2em
+			.cart-buttons
+				button
+					min-width: 12em !important
+
+	@media (max-width: 767px)
+		.product-inputs
+			width: 100% !important
+			.form-group
+				transform: scale(.9)			
+
+		.product-block
+			.cart-buttons
+				button
+					min-width: 0 !important
+					padding: 10px
+					font-size: 12px
+
+.sticker
+	top: 1em
+	left: 0
+	border-top-right-radius: 15px
+	border-bottom-right-radius: 15px
+	text-transform: uppercase
+	padding: 5px 14px 5px 10px !important
+	&:hover
+		color: $w !important
+
+.product-product
+	@media (min-width: 1200px)
+		.contain-product
+			width: 75%
+
+	@media (min-width: 1024px)
+		.product-gutter
+			.product-inputs
+				width: 90%
+
+	@media (min-width: 768px)
+		.product-gutter
+			.product-block
+				padding: 2.5em 1em
+
+	.breadcrumb
+		width: 90%
+		margin: auto	
+
+	.product-image-main-container
+		border: 1px solid #ddd
+		position: relative
+		.sticker
+			top: 1em
+
+	.col-sm-6
+		h4
+			font-size: 18px
+			font-weight: bold
+		h5
+			font-size: 14px
+			color: grey
+
+		ul
+			display: flex
+
+		.old-prices, .product-price, .new-prices
+			font-size: 18px
+
+		.new-prices
+			color: $tro
+			margin-right: 1em
+			font-weight: bold
+
+		.product-price
+			color: $tg
+
+		.product-description
+			p
+				color: $b
+
+		#waiting_list
+			.waiting_list_container
+				border-radius: 20px
+				background: $to
+				border-color: $to
+
+				.waiting_list_description
+					color: $w
+
+				.flex-group
+					#waiting_list_submit
+						min-width: 0
+						border-radius: 0 !important
+						background: black
+						border-color: black					
+					input
+						margin-right: 0
+						border: none
+						border-top-left-radius: 3px
+						border-bottom-left-radius: 3px
+
+						@media (max-width: 767px)
+							padding: 1em 2em
+							margin-bottom: 10px
+
+	.featured_related_products_
+		margin-top: 5em
+
+		.slick-list
+			padding: 1em 0
+
+			.sticker
+				top: 1em !important
+
+	@media (min-width: 768px)
+		#product
+			max-width: 300px
+
+		.quanity
+			max-width: 150px
+
+	@media (max-width: 767px)
+		#content
+			.row
+				margin: 0
+
+				#product
+					margin: auto
+					max-width: 250px
+
+					.quanity
+						max-width: 75%
+						margin: auto
+
+				.input-group-flex
+					justify-content: center
+
+				.col-sm-6
+					&:last-of-type
+						background: rgba(255,255,255,.5)				
+
+.old-prices, .price-old
+	opacity: .6
+	text-decoration: line-through
+
+.input-group
+	input
+		border-color: #ddd
+
+	button
+		background: $w !important
+		border: 1px solid #ddd !important
+		min-width: 0 !important
+		padding: 6px 12px
+		box-shadow: none !important
+		border-radius: 0 !important		
+		span
+			color: $b
+
+.featured_related_products_, .custom2 > .about-footer, .featured-30
+
+	.slick-nav
+		transform: scale(.9)
+		border: 1px solid #ddd
+		border-radius: 50%
+		background: $w
+		width: 3.5em
+		height: 3.5em
+		opacity: .5
+		&:hover
+			opacity: 1
+
+		&.right
+			top: -8em
+			right: 1em
+
+		&.left
+			top: -8em
+			right: 5em
+
+	@media (max-width: 767px)
+		h2
+			margin-bottom: 4em !important
+
+		.slick-nav
+			&.left
+				right: 52% !important
+				top: -6em !important
+			&.right
+				top: -6em !important
+				left: 52% !important
+
+.fcategory
+	padding-bottom: 0 !important
+	.contain-cats
+		padding-bottom: 7em
+	h2
+		img
+			width: 4em		
+
+	.contain-cats
+		display: flex
+		flex-wrap: wrap
+		width: 90%
+		margin: auto
+
+		.each-cat
+			position: relative
+
+			.image
+				max-width: 100%
+				overflow: hidden
+				height: 100%
+				img
+					width: 100%
+			.texts
+				position: absolute
+				bottom: 0
+				height: 100%
+				display: flex
+				align-items: flex-end
+				transition: .3s ease
+
+				.overlay
+					padding: 2em
+					h3
+						font-size: 28px
+						a
+							color: $tg
+
+					p
+						display: -webkit-box
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 2
+						overflow: hidden
+						color: $w
+						height: 56px
+
+					.yellow-butt
+						padding: 1.5em 3em
+						border-radius: 25px
+						display: none
+						transition: .3s ease
+						max-width: 12em
+						&:hover
+							color: $w !important
+
+			&:hover
+				.texts
+					background: rgba(0, 77, 121, .75)
+				.overlay
+
+					.yellow-butt
+						display: block
+
+		@media (min-width: 1024px)
+			.each-cat
+				width: 31%
+				margin: 1%
+
+				&.cat-0
+					width: 64%
+					margin: 1%
+					p
+						width: 50%
+
+		@media (max-width: 1023px)
+			.each-cat
+				width: 48%
+				margin: 1%
+
+				&.cat-0
+					width: 98%
+					margin: 1%
+					p
+						width: 50%
+
+
+		@media (max-width: 767px)
+			.each-cat
+				width: 100% !important
+
+.common-home
+	.featured
+		padding: 6em 0
+
+		.slick-list
+			padding: 1em 0
+
+		.featured.relative
+			width: 95%
+			margin: auto
+
+		.containel
+			text-align: center
+			a
+				min-width: 9em !important
+				padding: 1.5em 4em
+
+	#content
+		margin-bottom: 0
+
+	.news_latest
+		padding: 0	
+		.bg
+			padding-top: 4em
+			padding-bottom: 4em
+			h2
+				margin-bottom: 1em
+				color: #3A2514
+				position: inherit
+				img
+					width: 4em !important
+					z-index: 1 !important
+
+			.contain-b
+				width: 90%
+				margin: auto
+
+				.b-1
+					height: 100%
+					.artblock
+
+				.artblock
+					margin: 0
+					padding: 1em
+					border: none
+
+					.description
+						height: 90px
+
+					.name
+						height: 30px
+						overflow: hidden
+						a
+							display: -webkit-box
+							-webkit-box-orient: vertical
+							-webkit-line-clamp: 1
+							overflow: hidden
+							height: 28px
+
+				@media (min-width: 1024px)
+					height: 40em
+
+					.b-2
+						.artblock
+							height: 20em
+							display: flex
+							padding-right: 0
+							overflow: hidden
+
+							.img
+								width: 40%
+								img
+									max-height: 100%
+									width: 100%
+
+							.artblock-details
+								position: relative
+								&.detail
+									width: 60%
+
+				@media (max-width: 1023px)
+					height: 35em
+
+					.artblock-details
+						padding: .5em
+
+						.name, .description
+							margin-bottom: 0				
+
+					.b-2
+						.artblock
+							flex-direction: column						
+							height: auto
+							img
+								height: 8.5em
+								width: 100%
+
+							.date
+								padding: 1.5em 1em !important
+
+							.artblock-details
+
+								.description
+									display: -webkit-box
+									-webkit-line-clamp: 1
+									-webkit-box-orient: vertical
+									overflow: hidden
+									height: 2em
+
+				@media (min-width: 768px)
+					display: flex
+					flex-wrap: wrap
+
+					.b-1
+						overflow: hidden
+						img
+							height: 22em
+
+						.artblock
+							padding-right: 0
+
+					.b-1, .b-2
+						width: 50%
+						.artblock
+							padding-top: 0
+
+				@media (max-width: 767px)
+					height: auto !important
+					.artblock
+						img
+							width: 100% !important
+
+
+			.contain-bu
+				text-align: center
+				margin-top: 3em
+				a
+					padding: 1.5em 4em !important
+
+.gallery-album
+	.gallery-view
+		display: flex
+		flex-wrap: wrap
+
+		.album
+			margin: 1%
+			overflow: hidden
+			height: 370px
+			position: relative
+
+			.image
+				height: 100%
+				position: relative
+				overflow: hidden
+				text-align: center
+
+				img
+					height: 100%
+					min-width: 100%
+
+			.texts
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				height: 100%
+				display: flex
+				align-items: flex-end
+				transition: .3s ease
+
+				.overlay-two
+					position: absolute
+					top: 0
+					bottom: 0
+					display: flex
+					align-items: center
+					left: 0
+					right: 0
+					justify-content: center
+					background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(103,103,103,0.37143021271008403) 61%, rgba(0,0,0,0.9708699886204482) 100%)
+					transition: .3s ease
+
+				.overlay
+					z-index: 1
+					padding: 2em
+					h3
+						font-size: 28px
+						a
+							color: $tg
+
+					p
+						display: -webkit-box
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 2
+						overflow: hidden
+						color: $w
+
+					.yellow-butt
+						padding: 1.5em 1em
+						border-radius: 25px
+						display: none
+						transition: .3s ease
+						max-width: 10em
+						&:hover
+							color: $w !important
+
+			&:hover
+				.texts
+					background: rgba(0, 77, 121, .8)
+				.overlay
+
+					.yellow-butt
+						display: block				
+
+				.overlay-two
+					background: transparent
+
+			@media (min-width: 1023px)
+				width: 31%
+
+			@media (max-width: 1024px)
+				width: 48%
+
+			@media (max-width: 767px)
+				width: 100% !important
+
+		.modal
+			button
+				position: absolute
+				top: 0
+				left: 100%
+				background: transparent
+				color: white
+				font-size: 20px
+
+			.slider-for
+				@media (min-width: 1024px)
+					.slick-track
+						height: 60vh
+						img
+							height: 100%
+
+				@media (max-width: 1023px)
+					.slick-track
+						max-height: 60vh
+						img
+							// height: 100%
+
+				.slick-current > div
+					height: 100% !important
+
+				iframe
+					width: 100%
+					height: 100%
+				img
+					margin: auto
+					max-width: 100%
+
+				.slick-arrow
+					position: absolute
+					top: 0
+					bottom: 0
+					height: 100%
+					color: $w
+					font-size: 4em
+					display: flex
+					align-items: center
+					margin: 0 .5em
+					opacity: 0
+					transition: .3s ease
+
+					&.slick-prev
+						right: 100%
+
+					&.slick-next
+						left: 100%
+
+					&:hover
+						opacity: 1
+
+			.slider-nav
+				.modal-body
+					padding: 0
+					position: relative
+					.img
+						iframe
+							width: 100%
+							height: 100%
+
+					.overlay
+						position: absolute
+						z-index: 4
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						display: flex
+
+			.texts
+				padding: 2em
+
+			@media (min-width: 1024px)
+				.modal-dialog
+					width: 65%
+
+			@media (min-width: 768px)
+				.img
+					height: 12em
+
+			@media (max-width: 767px)
+				.slider-for
+					img
+						width: 100%
+				.img
+					height: 8em
+
+footer
+	.footer-upper-contet
+		li
+			padding: .25em
+			a
+				color: $w
+				letter-spacing: 1px
+
+	.instagram
+		display: flex
+		flex-wrap: wrap
+
+		.item
+			width: 33%
+			position: relative
+			padding: 5px !important
+			i
+				position: absolute
+
+#footer-area
+	@media (max-width: 1023px)
+		.newsletter-section
+			padding: 3em 0 !important
+
+		.footer-upper-contet > *
+			width: 50%
+			flex: auto !important
+			margin-bottom: 1.5em
+
+	@media (max-width: 767px)
+		.footer-contact-links
+			&:first-of-type
+				display: none
+
+		.footer-upper-contet > *
+			width: 100%		
+
+	.footer-social-icons
+		img
+			width: 2em
+
+	.footer-bottom
+		*
+			text-transform: uppercase
+			letter-spacing: 2px
+			color: #717171
+			font-size: 12px
+
+		a
+			color: $to
+
+.information-contact
+	#content
+		margin-bottom: 0
+
+	.iframe
+		width: 90%
+		margin: auto auto 5em
+		height: 60vh
+
+		.iframe-wrap
+			height: 100%
+
+			iframe
+				height: 100%
+
+	.contact-bottom
+		width: 90%
+		margin: auto
+		padding: 5em 0
+		display: flex
+
+		.contain-details
+			width: 20%
+
+		form
+			width: 80%
+			.contact-body
+				input, textarea
+					border-radius: 5px
+					border-color: #ddd
+
+				.inner-upload
+					height: 34px
+					input
+						width: 100%
+						background: $w
+						height: 100%
+						border: 1px solid #ddd
+
+				.rad
+					text-align: center
+					min-height: 3em
+
+					label
+						input
+							display: none
+						span
+							margin-right: .5em
+							cursor: pointer
+							background: $w
+							border: 2px solid $tb
+							border-radius: 25px
+							color: $tb
+							padding: .75em 2em
+							font-size: 20px
+							font-weight: bold
+							font-family: 'Chewy', cursive
+							letter-spacing: 1px
+
+						[type=radio]:checked ~ span
+							background: $tb
+							color: $w
+
+
+	.contain-details
+		*, a
+			color: $b !important
+		h3
+			color: $tg !important
+			min-height: 2em
+			font-size: 30px
+
+	.breadcrumb
+		width: 90%
+		margin-left: auto
+		margin-right: auto
+
+	@media (max-width: 1023px)
+		.contact-bottom
+			flex-direction: column
+			padding: 3em 0 !important
+
+			.contain-details
+				width: 100%
+				margin-bottom: 1em
+
+			form
+				width: 100%
+
+	@media (max-width: 767px)
+		.contact-bottom
+			.form-group
+				width: 100%
+				.text-danger
+					width: 100%
+
+			.rad
+				display: flex
+				margin-top: 1em
+				align-items: center
+				flex-wrap: wrap
+				justify-content: center
+				margin-bottom: 0
+
+				label
+					min-height: 4em
+					transform: scale(0.9)
+					margin-bottom: 1em
+					span
+						padding: .75em 1em !important
+
+#slideshow0
+	.slideshow-text-0
+		color: $w
+
+	.slider-slideshow-description-link
+		a
+			padding: 1.5em 2em
+			border-radius: 15px
+
+	@media (min-width: 1024px)
+
+		.slideshow-text-0
+			font-size: 5em	
+
+#button-search
+	background: #FDB813 !important
+	i
+		color: $w !important
+
+	&:hover
+		i
+			color: $w !important
+
+.product-search
+	.product-view
+		> .product-gutter
+			@media (min-width: 992px)
+				width: 33.33% !important
+
+.eks
+	@media (max-width: 767px)
+		background: rgba(255,255,255,.4) !important
+		color: black !important
+		font-weight: bold !important
+		right: 0 !important
+		left: auto !important
+
+.inner-upload
+	display: flex
+	align-items: center
+	width: 100%
+	position: relative
+
+	> *
+		outline: none !important
+
+	input
+		z-index: 1
+	.bootstrap-filestyle
+		width: 100%
+		background: $w
+		height: 100%
+		border-radius: 5px
+
+		input
+			background-color: $w !important
+
+		label
+			padding: 0
+			height: 95%
+			color: darkgrey
+			border: none
+			margin: 0
+			padding-left: .8em
+			outline: none !important
+			transform: translateX(1.5px)
+
+			.buttonText
+				height: 100%
+				display: flex
+				align-items: center
+				justify-content: space-between
+				text-transform: capitalize
+				outline: none !important
+				&:focus
+					outline: none !important
+
+				.browse
+					height: 100%
+					background: #B5B5B5
+					color: $w
+					display: flex
+					align-items: center
+					padding: 0 2em
+
+			.badge
+				position: absolute
+				top: 0
+				bottom: 0
+				background: white
+				border-radius: 0
+				color: black
+				height: 90%
+				outline: none !important
+				width: 50%
+				left: 0
+				display: flex
+				align-items: center

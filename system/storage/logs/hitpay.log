@@ -1,0 +1,96 @@
+2021-03-31 12:25:46 - callback get
+2021-03-31 12:25:46 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 93148cf6-0194-471d-aa5b-8ede79ca9051
+    [status] => canceled
+)
+
+2021-03-31 14:15:15 - callback get
+2021-03-31 14:15:15 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 9314b417-3bf6-4b92-a358-61b349aba342
+    [status] => completed
+)
+
+2021-03-31 14:17:33 - callback get
+2021-03-31 14:17:33 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 9314b4ec-c5af-4198-964b-365f5bf498db
+    [status] => completed
+)
+
+2021-03-31 14:25:09 - callback get
+2021-03-31 14:25:09 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 9314b7a8-2242-4b01-b9a8-5e181374f352
+    [status] => completed
+)
+
+2021-03-31 15:22:04 - callback get
+2021-03-31 15:22:04 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 9314cc09-8793-4862-b885-7c9335a14156
+    [status] => completed
+)
+
+2021-03-31 15:26:13 - callback get
+2021-03-31 15:26:13 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 9314cd86-5822-4e03-b402-bd50c5b41463
+    [status] => canceled
+)
+
+2021-04-12 10:28:25 - callback get
+2021-04-12 10:28:25 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 932c86cb-25bf-487f-9d6b-8e82eeb7ed43
+    [status] => canceled
+)
+
+2021-04-12 10:44:39 - callback get
+2021-04-12 10:44:39 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 932c8ca9-2a19-4d10-a9cb-2d7656b60cde
+    [status] => canceled
+)
+
+2021-04-12 10:45:25 - callback get
+2021-04-12 10:45:25 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 932c8cdd-431f-40dc-b68c-50455e5f3fca
+    [status] => completed
+)
+
+2021-04-22 14:18:37 - callback get
+2021-04-22 14:18:37 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 9340f6d9-363f-4509-9349-3f8279891130
+    [status] => canceled
+)
+
+2021-04-22 14:32:21 - callback get
+2021-04-22 14:32:21 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 9340fba6-667c-46ed-8e80-9830fe514bb6
+    [status] => canceled
+)
+
+2021-04-26 14:27:06 - callback get
+2021-04-26 14:27:06 - Array
+(
+    [route] => extension/payment/hitpay/callback
+    [reference] => 934905ed-b45f-4b1c-b3cc-d06b30502516
+    [status] => completed
+)
+
